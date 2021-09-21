@@ -1,0 +1,38 @@
+.grid {
+	height: 560px;
+	width: 560px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.grid div {
+	height: 70px;
+	width: 70px;
+}
+
+#main_screen {
+	margin: 200px;
+}
+
+body {
+	background-color: #7FFFD4;
+}
+
+.button {
+  display: inline-block;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+* {
+  font-family: Arial;
+  text-decoration: none;
+  font-size: 20px;
+}
