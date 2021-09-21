@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Candy Crush</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="app.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			function start_game() {
+				const score = document.querySelector('.scoreBoard');
+				const grid = document.querySelector('.grid');
+				const main_screen = document.querySelector('#main_screen');
+				if (score.style.display === "none") {
+					score.style.display = "";
+					main_screen.style.display = "none";
+				} else {
+					score.style.display = "none";
+				}
+
+				if (grid.style.display === "none") {
+					grid.style.display = "";
+					main_screen.style.display = "none";
+				} else {
+					grid.style.display = "none";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="main_screen">
+			 <button id="start_game" class="button" onclick="start_game()">Start Game</button>
+		</div>
+		<div class="scoreBoard" style="display:none;">
+			<h3>Score</h3><h1 id="score"></h1>
+		</div>
+		<div class="grid" style="display:none;">
+		</div>
+	</body>
+</html>
